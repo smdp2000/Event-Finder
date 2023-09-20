@@ -1,0 +1,52 @@
+.album-title {
+  text-align: left;
+ }
+ 
+ @media only screen and (max-device-width: 576px) {
+    .tabley {
+        overflow: scroll;
+    }
+
+   .album-title {
+    text-align: center;
+   }
+   
+  }
+
+ 
+
+  .arrow {
+    border: solid ;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .heart-icon {
+    color: white;
+  }
+  
+  .heart-icon-clicked {
+    color: red;
+  }
+
+  .show-more-text{
+    width: 100%;
+
+  }
+
+  .rbt-highlight-text {
+    background-color: transparent;  padding: 0px;
+  }
+
+  .css-ol7wxs-MuiTypography-root{
+    color: white;
+  }
