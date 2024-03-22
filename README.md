@@ -3,4 +3,4 @@ Event-booking website and matching Android app, developed using HTML, CSS, JavaS
 Java, and Android Studio, with integrated Spotify and Ticketmaster APIs, on Google Cloud Platform, facilitating
 user-friendly event exploration and ticket purchase
 
-Fully Functional Deployed Website Link - https://eventsearch-381505.uw.r.appspot.com/
+Fully Functional Deployed Website Link - https://stellar-husky-lungfish.glitch.me/
