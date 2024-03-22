@@ -310,7 +310,7 @@ function handle_undefined(obj){
       setLoading(true)
       console.log("CHALA")
       console.log(keyword)
-    const result = await axios.get(`https://eventsearch-381505.uw.r.appspot.com/suggest?keyword=${keyword}`);
+    const result = await axios.get(`/suggest?keyword=${keyword}`);
     let names =[]
     if(result.data._embedded!=undefined)
         names = handle_undefined(result.data._embedded.attractions) || ''
@@ -372,7 +372,7 @@ function handle_undefined(obj){
 
 async function showVenue(venue){
   //
-  const result = await axios.get("https://eventsearch-381505.uw.r.appspot.com/venueinfo?"+"key="+venue);
+  const result = await axios.get("/venueinfo?"+"key="+venue);
 
   console.log("VENUE DATA")
 
@@ -464,7 +464,7 @@ async function geteventInfo(key){
     setFavevt(false)
   }
 
-  const result = await axios.get("https://eventsearch-381505.uw.r.appspot.com/eventinfo?"+"key="+key);
+  const result = await axios.get("/eventinfo?"+"key="+key);
   console.log("EVENT DATA")
   console.log(result.data)
 // put condition
@@ -627,7 +627,7 @@ for(let i=0; i<music.length; i++){
     
   })
   
-  const artist_data = await axios.get("https://eventsearch-381505.uw.r.appspot.com/artist?"+URL.toString());
+  const artist_data = await axios.get("/artist?"+URL.toString());
   console.log("SPOTIFYYYYYYYYYYYYYYYYYYYYY")
   console.log(artist_data.data)
 
@@ -663,7 +663,7 @@ async function getTable(keyword, distance,  category, lat, lon){
     'lat':lat,
     'lon':lon
   })
-  const result = await axios.get("https://eventsearch-381505.uw.r.appspot.com/events?"+URL.toString());
+  const result = await axios.get("/events?"+URL.toString());
   console.log("TABLE DATA")
   console.log(result.data._embedded)
   if(result.data._embedded==undefined)
